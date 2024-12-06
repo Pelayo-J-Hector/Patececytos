@@ -1,0 +1,301 @@
+body {
+    height: 145vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+*  {
+    list-style: none;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    position: fixed;
+}
+h3{
+    text-align: center;
+    font-size: 8rem;
+    padding-top: 80px;
+    color: #8b6220;
+}
+
+
+
+h2 {
+    color: #fff;
+    font-size:30px;
+    text-align:center;
+    font-family: 'Sunday Best';
+  }
+  
+  p {
+    color: #fff;
+    font-size: 20px;
+    text-align:center;
+    font-family: 'Light Stories' ;
+  }
+  
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+    z-index: 2;
+}
+
+.logo {
+    height: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.item2 {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #7b5426; 
+}
+
+.item2:hover {
+    color: #b89582;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #c59056;
+    color: #f1e6d8;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #7b5426;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+        margin: 0;
+    }
+
+    label {
+        display: initial;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #b89582;
+        display: none;
+    }
+
+    .itemm {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    #menu:checked ~ .menu {
+        display: initial;
+    }
+
+}
+
+
+.border {
+    color: transparent;  
+    text-shadow:
+      -1px -1px 0 white, 
+      1px -1px 0 white,
+      -1px 1px 0 white,
+      1px 1px 0 white;  
+  }
+
+.container img {
+	max-width: 90%;
+	height: auto;
+	border: solid 10px #ad820d;
+    border-radius: 50px;
+}
+.container{
+    gap: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    height: 70%;
+}
+
+.card{
+    width: 350px;
+    height: flex;
+}
+.slider-frame {
+	width: 1280px;
+	height: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+    width: 400%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 50%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+#main-footer {
+	background: #b89582;
+	color: white;
+	text-align: center;
+	padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+
+	.goku {
+		color: ghostwhite;
+		font-size: 30px;
+	}
+
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+button {
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+  }
+  
+  button svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+  .play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+    font-size: 70px;
+  }
+  
+  button:hover svg {
+    transform: scale(3) translate(50%);
+  }
+  
+  .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+    font-size: 75px;
+  }
+  
+  button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
+
+  
+.titulo {
+    width: 100%;
+    margin-top: 200px;
+}

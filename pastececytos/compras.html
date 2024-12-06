@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Compras</title>
+		<link rel="stylesheet" href="css/compras.css" />
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+
+		<header id="Header">
+			<img src="img/logo1.png" class="logo" alt="">
+			<input type="checkbox" id="menu" />
+			<label for="menu">
+				<img src="img/ma.png" class="menu-icono" alt="">
+			</label>
+		
+		
+		
+			<ul class="menu">
+				<a href="index.html"><li class="item2" >Inicio</li></a>
+				<a href="panaderia.html"><li class="item2" >Panaderia</li></a>
+				<a href="pasteleria.html"><li class="item2" >Pasteleria</li></a>
+				<a href="oferta.html"><li class="item2" >Ofertas</li></a>
+				<a href="compras.html"><li class="btn" >Compras</li></a>
+			</ul>
+		   </header>
+
+		<div class="containercentro">
+
+		<header>
+			<h1>COMPRAS</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+						
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+						
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+						<button class="cta">
+							<span>comprar</span>
+							<svg width="15px" height="10px" viewBox="0 0 13 10">
+							  <path d="M1,5 L11,5"></path>
+							  <polyline points="8 1 12 5 8 9"></polyline>
+							</svg>
+						  </button>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<br>
+		<br>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="img/casero.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pan casero</h2>
+					<p class="price">$12</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/cerdito.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pan cerdito</h2>
+					<p class="price">$4</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/jala.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pan jala</h2>
+					<p class="price">$5</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+				<div class="item">
+					<figure>
+						<img
+							src= "img/frambuesa.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>pastel de frambuesa</h2>
+						<p class="price">$300</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="img/oreo.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Pastel de oreo</h2>
+						<p class="price">$250</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="img/mazapan.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Pastel de mazapan</h2>
+						<p class="price">$380</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+		
+						<div class="item">
+					<figure>
+						<img
+							src="img/muerto.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Pan de muerto</h2>
+						<p class="price">$10</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="img/concha.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>concha</h2>
+						<p class="price">$6</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+				<div class="item">
+					<figure>
+						<img
+							src="img/beso.jpeg"
+							alt="producto"
+						/>
+					</figure>
+					<div class="info-product">
+						<h2>Beso</h2>
+						<p class="price">$9</p>
+						<button class="btn-add-cart">Añadir al carrito</button>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<footer id="main-footer"> 
+				<section class="account">
+				<a href="https://www.facebook.com/share/c8ZMhm4YpmeRtxzM/?mibextid=qi2Omg"><i class='bx bxl-facebook'></i></a>
+				<a href="https://wa.link/2rog78"><i class='bx bxl-whatsapp'></i></a>
+				<a href="https://www.instagram.com/cecytemchimal2?igsh=NGFlZnRmOWFnYmFi"><i class='bx bxl-instagram'></i></a>
+				<a href="http://cecytem.edomex.gob.mx/chimalhuacan_ii"><i class='bx bx-home-alt-2'></i></a>
+				</section>
+			   </footer>
+
+
+               <script>
+
+
+			   const greetButton = document.querySelector(".cta");
+			   
+				   function hello() {
+					alert("Registro exitoso. Ahora puedes iniciar sesión.");
+					window.location.href = "compras.html";
+				   };
+				   
+				   greetButton.addEventListener("click", hello);
+			   
+
+				   var header = document.getElementById("Header")
+    
+			   </script>
+	</body>
+	<script src="scriptc.js"></script>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pasteleria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/pastel.css">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+
+  <header id="Header">
+    <img src="img/logo1.png" class="logo" alt="">
+    <input type="checkbox" id="menu" />
+    <label for="menu">
+        <img src="img/ma.png" class="menu-icono" alt="">
+    </label>
+
+
+
+    <ul class="menu">
+        <a href="index.html"><li class="item" >Inicio</li></a>
+        <a href="panaderia.html"><li class="item" >Panaderia</li></a>
+        <a href=""><li class="btn" >Pasteleria</li></a>
+        <a href="oferta.html"><li class="item" >Ofertas</li></a>
+        <a href="compras.html"><li class="btn" >Compras</li></a>
+    </ul>
+   </header> 
+
+
+   <div id="content">
+    <div id="vacio"></div>
+    <div>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/r1.png" alt="image 1" />
+                <img id="slide-2" src="img/r2.png" alt="image 2" />
+                <img id="slide-3" src="img/r3.png" alt="image 3" />
+                <img id="slide-3" src="img/r4.png" alt="image 4" />
+            </div>
+        </div>
+
+        <section class="container2">
+            <div class="product">
+                <img src="img/c1.png" alt="image 4">
+                <h2>Pastel Harry Potter</h2>
+                <br>
+                <p>Es un hermoso pastel de Harry Potter que tiene el sombrero seleccionador y la snitch dorada hechos por fondant , tiene un toques dorados de estrellas y  esferas de chocolate. (El pan puede ser de cualquier sabor)</p>
+                <br>
+                <a href="compras.html" class="button">Comprar</a>
+            </div>
+            <div class="product2">
+                <img src="img/c2.png" alt="image 4">
+                <h2>Pastel Deadpool</h2>
+                <br>
+                <p>Es un sabroso pastel de Deadpool que tiene un glaseado de chocolate blanco color rojo y varios chocolates para darle una mejor presentacion y sabor.(El pan puede ser de cualquier sabor)</p>
+                <br>
+                <<a href="compras.html" class="button">Comprar</a>
+            </div>        </section>
+
+                <section class="container2">
+            <div class="product">
+                <img src="img/c3.png" alt="image 4">
+                <h2>Pastel de mazapan</h2>
+                <br>
+                <p>Este delicioso pastel de Mazapan de la Rosa que tiene varios mazapanes rodeándolo y desechos, con un  betun de fresa. El pan es de mazapan con relleno de nuez y  mermelada de fresa</p>
+                <br>
+                <a href="compras.html" class="button">Comprar</a>
+            </div>
+            <div class="product2">
+                <img src="img/c4.png" alt="image 4">
+                <h2>Pastel de Oreo</h2>
+                <br>
+                <p>Este rico pastel de Oreo contiene la rica galleta Oreo, fresas y un betun de vainilla.El pan es de Oreo con relleno de nuez y  mousse de chocolate</p>
+                <br>
+                <a href="compras.html" class="button">Comprar</a>
+            </div>        </section>
+
+            <section class="container2">
+              <div class="product">
+                  <img src="img/c5.png" alt="image 4">
+                  <h2>Pastel de frambuesa</h2>
+                  <br>
+                  <p>Es un delicioso pastel de frambuesa que tiene un betun de vainilla y una mermelada de frambuesa. El pan es de vainilla y un relleno de mermelada de frambuesa</p>
+                  <br>
+                  <a href="compras.html" class="button">Comprar</a>
+              </div>
+              <div class="product2">
+                  <img src="img/c6.png" alt="image 4">
+                  <h2>Pastel de fresa </h2>
+                  <br>
+                  <p>Es un rico pastel de fresa que tiene un corazon de fresas y con un betun de fresa. El pan es de fresa y un relleno de mermelada de frambuesa </p>
+                  <br>
+                  <a href="compras.html" class="button">Comprar</a>
+              </div>        </section>
+
+    </section>   
+
+    <footer id="main-footer"> 
+        <a href="https://www.facebook.com/share/c8ZMhm4YpmeRtxzM/?mibextid=qi2Omg"><i class="bi bi-facebook goku"></i></a>
+        <a href="https://wa.link/2rog78"><i class="bi bi-whatsapp goku"></i></a>
+        <a href="https://www.instagram.com/cecytemchimal2?igsh=NGFlZnRmOWFnYmFi"><i class="bi bi-instagram goku"></i></a>
+        <a href="http://cecytem.edomex.gob.mx/chimalhuacan_ii"><i class="bi bi-house goku"></i></i></a>
+       </footer>
+</div>
+
+</body>
+
+<script>
+  
+var header = document.getElementById("Header")
+
+window.addEventListener('scroll', ()=> {
+
+    var scroll = window.scrollY
+
+    if (scroll>10) {
+        header.style.backgroundColor = '#b89582'
+    } else {
+        header.style.backgroundColor = 'transparent'
+    }
+})
+
+
+</script>
+
+</html>
